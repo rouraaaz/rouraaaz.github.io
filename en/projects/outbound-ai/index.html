@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Outbound AI: Sales CRM &amp; Email Automation · Tomás Roura Zabala</title>
+<meta name="description" content="Defined the workflow and business rules for an AI-assisted outreach CRM and built it with Claude Code. A working app in early use, with 400+ contacts imported.">
+<meta name="author" content="Tomás Roura Zabala">
+<link rel="canonical" href="https://rouraaaz.github.io/en/projects/outbound-ai/">
+<link rel="alternate" hreflang="es" href="https://rouraaaz.github.io/projects/outbound-ai/">
+<link rel="alternate" hreflang="en" href="https://rouraaaz.github.io/en/projects/outbound-ai/">
+<meta property="og:title" content="Outbound AI: Sales CRM &amp; Email Automation · Tomás Roura Zabala">
+<meta property="og:description" content="Defined the workflow and business rules for an AI-assisted outreach CRM and built it with Claude Code. A working app in early use, with 400+ contacts imported.">
+<meta property="og:image" content="https://rouraaaz.github.io/projects/invoice-portfolio-dashboards/portfolio-kpis.webp">
+<meta name="color-scheme" content="light dark">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="../../../assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Outbound AI: Sales CRM & Email Automation","description":"Defined the workflow and business rules for an AI-assisted outreach CRM and built it with Claude Code.","inLanguage":"en","author":{"@type":"Person","name":"Tomás Roura Zabala"},"keywords":"Claude Code, Python, FastAPI, SQLAlchemy, SQLite, React, TypeScript, Anthropic API, AppleScript, Git"}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="../../../en/">Tomás Roura Zabala</a>
+    <nav class="site-nav" id="site-nav" aria-label="Menu">
+      <ul><li><a href="../../../en/">Home</a></li><li><a href="../../../en/projects/" aria-current="page">Projects</a></li><li><a href="../../../en/experience/">Experience</a></li><li><a href="../../../en/cv/">CV</a></li><li><a href="#contact">Contact</a></li></ul>
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href="../../../projects/outbound-ai/" hreflang="es" lang="es" data-lang="es" aria-label="Ver en español"><span>ES</span><span class="on">EN</span></a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch colour theme"><svg class="i i-moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16 12.5A6.5 6.5 0 0 1 7.5 4a6.5 6.5 0 1 0 8.5 8.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="i i-sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2v2m0 12v2M2 10h2m12 0h2M4.3 4.3l1.4 1.4m8.6 8.6 1.4 1.4M4.3 15.7l1.4-1.4m8.6-8.6 1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="wrap project">
+  <a class="back" href="../../../en/projects/"><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H5m4-4-4 4 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> All projects</a>
+  <header class="project-head">
+    <p class="meta">Personal · Automation · AI · Personal project · Sep 2026</p>
+    <h1>Outbound AI: Sales CRM &amp; Email Automation</h1>
+    <p class="lead">Defined the workflow and business rules for an AI-assisted outreach CRM and built it with Claude Code.</p>
+  </header>
+  <figure class="project-visual"><div class="hero-img"><div class="diagram"><svg viewBox="0 0 400 225" role="img" aria-label="Diagram">
+    <rect x="4" y="52" width="72" height="36" rx="6" class="v-cell"/><text x="40" y="74" text-anchor="middle" class="v-t">Import</text><rect x="111" y="52" width="72" height="36" rx="6" class="v-cell"/><text x="147" y="74" text-anchor="middle" class="v-t">Research</text><rect x="218" y="52" width="72" height="36" rx="6" class="v-cell"/><text x="254" y="74" text-anchor="middle" class="v-t">Draft</text><rect x="325" y="52" width="72" height="36" rx="6" class="v-human"/><text x="361" y="74" text-anchor="middle" class="v-t">Approve</text><rect x="4" y="142" width="72" height="36" rx="6" class="v-human"/><text x="40" y="164" text-anchor="middle" class="v-t">Send</text><rect x="111" y="142" width="72" height="36" rx="6" class="v-cell"/><text x="147" y="164" text-anchor="middle" class="v-t">Follow up</text><rect x="218" y="142" width="72" height="36" rx="6" class="v-cell"/><text x="254" y="164" text-anchor="middle" class="v-t">Reply</text>
+    <path d="M76 70h35M183 70h35M290 70h35M361 88v34a8 8 0 0 1-8 8H48a8 8 0 0 0-8 8v4M76 160h35M183 160h35" class="v-line"/>
+    <text x="200" y="212" text-anchor="middle" class="v-s">shaded steps are done by a person</text></svg></div><span class="img-note">Diagram</span></div></figure>
+  <div class="story">
+    <section><h2>Context</h2><p>A personal project from September 2026. I wanted personalised B2B outreach without writing every email by hand and without sending generic mass emails.</p></section>
+    <section><h2>Problem</h2><p>Personalised first emails take a lot of research, and follow-ups get forgotten or, worse, sent to someone who has already replied.</p></section>
+    <section><h2>What I did</h2><ul class="checks"><li><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Defined the daily workflow and the ten rules the system must never break (e.g. a first email is never sent automatically).</span></li><li><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Decided what is automatic and what needs a person.</span></li><li><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tested it and use it with real contacts. The code was written with Claude Code; this is not professional software-engineering experience.</span></li></ul></section>
+    <section><h2>Solution</h2>
+      <dl class="parts"><div><dt>Research and drafting</dt><dd>AI agents research each company, find a sourced reason to write, draft the email and reject unsupported claims.</dd></div><div><dt>CRM and campaigns</dt><dd>Contacts, companies, pipeline stages and campaigns compared by close rate.</dd></div><div><dt>Follow-ups</dt><dd>I approve and send each first email; follow-ups run automatically and stop as soon as someone replies.</dd></div></dl>
+      
+      <div class="demo" data-demo="outbound-pipeline" lang="en"><p class="demo-title">How it works: step through an example (fictitious prospect)</p><div class="demo-mount"><noscript><p class="muted">Needs JavaScript.</p></noscript></div></div>
+    </section>
+    <section><h2>Result</h2><ul class="results"><li>Working app: Python/FastAPI backend, React/TypeScript interface, 18 automated test files.</li><li>In early use: 400+ contacts imported, first emails sent and replies detected.</li></ul></section>
+    <section><h2>Evidence</h2>
+      
+      <details class="code"><summary>View code: The gates before any follow-up is sent</summary><p class="muted">Abridged from backend/app/services/followup_engine.py. Every follow-up passes these checks, cheapest and most decisive first; the reply check runs twice.</p><pre><code>def _process_link(session, link, grace_days, at):
+    &quot;&quot;&quot;All gates for one follow-up, cheapest and most decisive first.&quot;&quot;&quot;
+    contact = session.get(Contact, link.contact_id)
+
+    # 1. Block state and contactability.
+    contactable, reason = contact_service.is_contactable(contact)
+    if not contactable:
+        sequence_service.stop(session, link, reason=reason)
+        return outcome(False, True, reason)
+
+    # 2. Has the prospect replied? Re-checked here, never assumed from earlier.
+    if response_service.has_replied_since(session, contact.id):
+        sequence_service.stop(session, link, reason=&quot;Prospect replied — follow-up cancelled&quot;)
+        return outcome(False, True, &quot;Prospect had already replied&quot;)
+
+    # 3. The previous email must be a verified send.
+    previous = _previous_sent_emails(session, link)
+    if not previous:
+        link.next_follow_up_at = utcnow() + timedelta(hours=6)
+        return outcome(False, False, &quot;No verified sent email in this thread yet&quot;)
+
+    # … 4–7: grace period, sequence step, sender pinned to the original mailbox,
+    #        daily capacity, reuse of a draft that survived a crash
+
+    # 8. Last look before handing anything to Mail.
+    if response_service.has_replied_since(session, contact.id):
+        email.status = str(EmailStatus.CANCELLED)
+        sequence_service.stop(session, link, reason=&quot;Prospect replied while the follow-up was being written&quot;)
+        return outcome(False, True, &quot;Reply arrived during generation&quot;)
+
+    sent, error = mail_service.send_follow_up(session, email)</code></pre></details>
+      <p class="muted">The contact database stays on my computer and is never committed. The repository is private and available on request.</p>
+      
+    </section>
+    <section><h2>Tools</h2><p class="tools">Claude Code · Python · FastAPI · SQLAlchemy · SQLite · React · TypeScript · Anthropic API · AppleScript · Git</p></section>
+  </div>
+  <nav class="project-foot" aria-label="Next project">
+    <span></span>
+    <a class="next" href="../../../en/projects/sneaker-care-cfo/"><span>Next project</span>Sneaker Care Co.: Student Company CFO</a>
+  </nav>
+</article>
+</main>
+<footer class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div>
+      <h2>Contact</h2>
+      <p class="muted">Graduate role in Audit, Advisory or Finance · Barcelona, Spain · Open to relocation</p>
+    </div>
+    <ul class="contact-links">
+      <li><a class="btn btn-primary" href="../../../assets/documents/Tomas_Roura_Zabala_CV_EN.pdf" download="Tomas_Roura_Zabala_CV_EN.pdf"><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m-4-4 4 4 4-4M4 16h12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Download CV</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/tomas-roura-zabala" target="_blank" rel="me noopener">LinkedIn <svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4H4v12h12v-4M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a class="btn" href="https://github.com/rouraaaz" target="_blank" rel="me noopener">GitHub <svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4H4v12h12v-4M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li class="email"><a href="mailto:rourazabalatomas@gmail.com">rourazabalatomas@gmail.com</a> <button type="button" class="copy-btn" data-copy="rourazabalatomas@gmail.com" data-done="Copied">Copy</button></li>
+    </ul>
+  </div>
+  <p class="wrap fineprint">Dashboard screenshots show my tools running on invented data. Confidential documents are described, not shown.</p>
+</footer>
+<dialog class="lightbox" aria-label="Screenshots">
+  <div class="lb-bar"><p class="lb-title"></p><span class="lb-count"></span><button type="button" class="lb-close">Close</button></div>
+  <div class="lb-stage"><button type="button" class="lb-nav lb-prev" aria-label="Previous">‹</button><figure class="lb-fig"><div class="lb-imgwrap"><img alt=""><div class="lb-marks"></div></div><figcaption class="lb-cap"></figcaption></figure><button type="button" class="lb-nav lb-next" aria-label="Next">›</button></div>
+</dialog>
+<script src="../../../assets/js/site.js" defer></script>
+<script src="../../../assets/js/demos.js" defer></script>
+</body>
+</html>

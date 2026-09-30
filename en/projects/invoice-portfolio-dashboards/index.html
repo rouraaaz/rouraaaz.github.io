@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Invoice Portfolio Reporting Toolkit · Tomás Roura Zabala</title>
+<meta name="description" content="Designed and built three browser-based dashboards that turn the factoring system's Excel exports into portfolio KPIs. Gave management a clear view of unpaid invoices, which could not be identified reliably before.">
+<meta name="author" content="Tomás Roura Zabala">
+<link rel="canonical" href="https://rouraaaz.github.io/en/projects/invoice-portfolio-dashboards/">
+<link rel="alternate" hreflang="es" href="https://rouraaaz.github.io/projects/invoice-portfolio-dashboards/">
+<link rel="alternate" hreflang="en" href="https://rouraaaz.github.io/en/projects/invoice-portfolio-dashboards/">
+<meta property="og:title" content="Invoice Portfolio Reporting Toolkit · Tomás Roura Zabala">
+<meta property="og:description" content="Designed and built three browser-based dashboards that turn the factoring system's Excel exports into portfolio KPIs. Gave management a clear view of unpaid invoices, which could not be identified reliably before.">
+<meta property="og:image" content="https://rouraaaz.github.io/projects/invoice-portfolio-dashboards/portfolio-kpis.webp">
+<meta name="color-scheme" content="light dark">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="../../../assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Invoice Portfolio Reporting Toolkit","description":"Designed and built three browser-based dashboards that turn the factoring system's Excel exports into portfolio KPIs.","inLanguage":"en","author":{"@type":"Person","name":"Tomás Roura Zabala"},"keywords":"JavaScript, HTML, Chart.js, SheetJS, ExcelJS, jsPDF, Excel"}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="../../../en/">Tomás Roura Zabala</a>
+    <nav class="site-nav" id="site-nav" aria-label="Menu">
+      <ul><li><a href="../../../en/">Home</a></li><li><a href="../../../en/projects/" aria-current="page">Projects</a></li><li><a href="../../../en/experience/">Experience</a></li><li><a href="../../../en/cv/">CV</a></li><li><a href="#contact">Contact</a></li></ul>
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href="../../../projects/invoice-portfolio-dashboards/" hreflang="es" lang="es" data-lang="es" aria-label="Ver en español"><span>ES</span><span class="on">EN</span></a>
+      <button class="icon-btn theme-btn" type="button" aria-label="Switch colour theme"><svg class="i i-moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16 12.5A6.5 6.5 0 0 1 7.5 4a6.5 6.5 0 1 0 8.5 8.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><svg class="i i-sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 2v2m0 12v2M2 10h2m12 0h2M4.3 4.3l1.4 1.4m8.6 8.6 1.4 1.4M4.3 15.7l1.4-1.4m8.6-8.6 1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="wrap project">
+  <a class="back" href="../../../en/projects/"><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H5m4-4-4 4 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> All projects</a>
+  <header class="project-head">
+    <p class="meta">Professional · Finance · Data · Zintra Capital · 2026</p>
+    <h1>Invoice Portfolio Reporting Toolkit</h1>
+    <p class="lead">Designed and built three browser-based dashboards that turn the factoring system's Excel exports into portfolio KPIs.</p>
+  </header>
+  <figure class="project-visual"><a class="hero-img" href="../../../projects/invoice-portfolio-dashboards/portfolio-kpis.webp" data-lightbox="g-invoice-portfolio-dashboards" data-index="0" data-title="Portfolio KPI dashboard: summary" data-notes="[{&quot;x&quot;:31,&quot;y&quot;:8.3,&quot;label&quot;:&quot;Four views: summary, debtors, clients and aging.&quot;},{&quot;x&quot;:34.8,&quot;y&quot;:13.5,&quot;label&quot;:&quot;One-click filters: live, overdue, public and private debtors.&quot;},{&quot;x&quot;:55,&quot;y&quot;:20.6,&quot;label&quot;:&quot;Outstanding vs collected, split into live and collected invoices.&quot;},{&quot;x&quot;:72,&quot;y&quot;:26.5,&quot;label&quot;:&quot;Amount-weighted aging, with a threshold badge.&quot;},{&quot;x&quot;:13,&quot;y&quot;:37.5,&quot;label&quot;:&quot;Overdue share, flagged when it passes the alert threshold.&quot;},{&quot;x&quot;:16.5,&quot;y&quot;:20.4,&quot;label&quot;:&quot;Every KPI has an info note with its exact calculation rule.&quot;},{&quot;x&quot;:22,&quot;y&quot;:70,&quot;label&quot;:&quot;Concentration: top 5, top 10 or all debtor groups by outstanding amount.&quot;}]"><img src="../../../projects/invoice-portfolio-dashboards/portfolio-kpis.webp" alt="Portfolio KPI dashboard summary tab with thirteen KPI cards and rankings of top debtor groups and top clients by outstanding amount, invented data" width="1600" height="1022" decoding="async"><span class="img-note">Screenshot of the real tool, invented data · click to enlarge</span></a>
+       <button type="button" class="btn view-more" data-open="g-invoice-portfolio-dashboards">View all 6 screenshots</button></figure>
+  <div class="story">
+    <section><h2>Context</h2><p>Zintra Capital buys healthcare invoices from its clients. The active portfolio was €50–60M across 10,000+ invoices, and portfolio data came out of the system as Excel exports with 90+ columns.</p></section>
+    <section><h2>Problem</h2><p>Every portfolio question (what is outstanding, what is overdue, where the risk is concentrated, which invoices are stuck) meant filtering and pivoting those exports by hand. Unpaid invoices could not be identified reliably.</p></section>
+    <section><h2>What I did</h2><ul class="checks"><li><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Designed and built all three dashboards during my internship.</span></li><li><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Wrote the calculation rule for every KPI and documented it inside each tool.</span></li><li><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Built the filters and the exports to HTML, PDF and Excel.</span></li></ul></section>
+    <section><h2>Solution</h2>
+      <dl class="parts"><div><dt>Portfolio KPI dashboard</dt><dd>Outstanding vs collected, overdue share, concentration by debtor and client, and aging by bracket.</dd></div><div><dt>Invoice incidents dashboard</dt><dd>Groups incidents by type and follow-up action, with a debtor × incident matrix.</dd></div><div><dt>Client financing panel</dt><dd>Purchases, returns, collections and amounts pending financing, per client and month.</dd></div></dl>
+      <p class="muted">Each tool is a single HTML file that reads the export in the browser. No data is uploaded anywhere.</p>
+      <div class="demo" data-demo="portfolio-sim" lang="en"><p class="demo-title">Try it: portfolio KPIs (invented data)</p><div class="demo-mount"><noscript><p class="muted">Needs JavaScript.</p></noscript></div></div>
+    </section>
+    <section><h2>Result</h2><ul class="results"><li>Management could see unpaid invoices clearly for the first time.</li><li>Manual pivoting replaced by loading the latest export.</li><li>~5,000 lines of JavaScript, with every KPI definition documented in the tool.</li></ul></section>
+    <section><h2>Evidence</h2>
+      <ul class="thumbs"><li><a href="../../../projects/invoice-portfolio-dashboards/portfolio-kpis.webp" data-lightbox="g-invoice-portfolio-dashboards" data-index="0" data-title="Portfolio KPI dashboard: summary" data-notes="[{&quot;x&quot;:31,&quot;y&quot;:8.3,&quot;label&quot;:&quot;Four views: summary, debtors, clients and aging.&quot;},{&quot;x&quot;:34.8,&quot;y&quot;:13.5,&quot;label&quot;:&quot;One-click filters: live, overdue, public and private debtors.&quot;},{&quot;x&quot;:55,&quot;y&quot;:20.6,&quot;label&quot;:&quot;Outstanding vs collected, split into live and collected invoices.&quot;},{&quot;x&quot;:72,&quot;y&quot;:26.5,&quot;label&quot;:&quot;Amount-weighted aging, with a threshold badge.&quot;},{&quot;x&quot;:13,&quot;y&quot;:37.5,&quot;label&quot;:&quot;Overdue share, flagged when it passes the alert threshold.&quot;},{&quot;x&quot;:16.5,&quot;y&quot;:20.4,&quot;label&quot;:&quot;Every KPI has an info note with its exact calculation rule.&quot;},{&quot;x&quot;:22,&quot;y&quot;:70,&quot;label&quot;:&quot;Concentration: top 5, top 10 or all debtor groups by outstanding amount.&quot;}]"><img src="../../../projects/invoice-portfolio-dashboards/portfolio-kpis.webp" alt="Portfolio KPI dashboard summary tab with thirteen KPI cards and rankings of top debtor groups and top clients by outstanding amount, invented data" loading="lazy" width="320" height="200"><span>Portfolio KPI dashboard: summary</span></a></li><li><a href="../../../projects/invoice-portfolio-dashboards/portfolio-composition.webp" data-lightbox="g-invoice-portfolio-dashboards" data-index="1" data-title="Portfolio KPI dashboard: composition" data-notes="[{&quot;x&quot;:12,&quot;y&quot;:22,&quot;label&quot;:&quot;Public vs private debtors.&quot;},{&quot;x&quot;:37,&quot;y&quot;:22,&quot;label&quot;:&quot;Overdue vs not yet due, for the whole portfolio and for each debtor type.&quot;},{&quot;x&quot;:19.5,&quot;y&quot;:45,&quot;label&quot;:&quot;Outstanding by invoice status: amount, number of invoices or type.&quot;}]"><img src="../../../projects/invoice-portfolio-dashboards/portfolio-composition.webp" alt="Four doughnut charts splitting the outstanding amount into public vs private and overdue vs not overdue, and a bar chart of outstanding by invoice status, invented data" loading="lazy" width="320" height="200"><span>Portfolio KPI dashboard: composition</span></a></li><li><a href="../../../projects/invoice-portfolio-dashboards/portfolio-aging.webp" data-lightbox="g-invoice-portfolio-dashboards" data-index="2" data-title="Portfolio KPI dashboard: aging" data-notes="[{&quot;x&quot;:12.5,&quot;y&quot;:25,&quot;label&quot;:&quot;Amount-weighted aging in days.&quot;},{&quot;x&quot;:24.5,&quot;y&quot;:36,&quot;label&quot;:&quot;Outstanding by bracket: not due, 0–30, 31–60, 61–90 and over 90 days.&quot;},{&quot;x&quot;:50,&quot;y&quot;:84,&quot;label&quot;:&quot;Overdue share for each client.&quot;}]"><img src="../../../projects/invoice-portfolio-dashboards/portfolio-aging.webp" alt="Aging tab with weighted aging KPI, distribution of outstanding by aging bracket, an aging doughnut and overdue percentage per client, invented data" loading="lazy" width="320" height="200"><span>Portfolio KPI dashboard: aging</span></a></li><li><a href="../../../projects/invoice-portfolio-dashboards/incidents-overview.webp" data-lightbox="g-invoice-portfolio-dashboards" data-index="3" data-title="Invoice incidents dashboard: overview" data-notes="[{&quot;x&quot;:78.5,&quot;y&quot;:12,&quot;label&quot;:&quot;Exports to HTML, Excel and PDF.&quot;},{&quot;x&quot;:13.5,&quot;y&quot;:26,&quot;label&quot;:&quot;Filters by debtor, client, year, incident type, action and user, plus free-text search.&quot;},{&quot;x&quot;:27,&quot;y&quot;:61,&quot;label&quot;:&quot;Free-text actions grouped into consistent categories.&quot;},{&quot;x&quot;:70.5,&quot;y&quot;:51.5,&quot;label&quot;:&quot;Amount by incident type.&quot;},{&quot;x&quot;:27.5,&quot;y&quot;:77,&quot;label&quot;:&quot;Top 10 debtors by amount in incident.&quot;}]"><img src="../../../projects/invoice-portfolio-dashboards/incidents-overview.webp" alt="Invoice incidents dashboard with filters, a doughnut of follow-up actions, bars by incident type, top 10 debtors by amount and resolved amounts, invented data" loading="lazy" width="320" height="200"><span>Invoice incidents dashboard: overview</span></a></li><li><a href="../../../projects/invoice-portfolio-dashboards/incidents-matrix.webp" data-lightbox="g-invoice-portfolio-dashboards" data-index="4" data-title="Invoice incidents dashboard: summary and matrix" data-notes="[{&quot;x&quot;:68,&quot;y&quot;:10.3,&quot;label&quot;:&quot;Pending vs resolved, in amount and number of invoices.&quot;},{&quot;x&quot;:26.5,&quot;y&quot;:38.8,&quot;label&quot;:&quot;Debtor × incident-type matrix, sorted by total amount.&quot;}]"><img src="../../../projects/invoice-portfolio-dashboards/incidents-matrix.webp" alt="Executive summary cards for incidents and a matrix of debtors against incident types with amounts, invented data" loading="lazy" width="320" height="200"><span>Invoice incidents dashboard: summary and matrix</span></a></li><li><a href="../../../projects/invoice-portfolio-dashboards/client-financing.webp" data-lightbox="g-invoice-portfolio-dashboards" data-index="5" data-title="Client financing panel" data-notes="[{&quot;x&quot;:8,&quot;y&quot;:45,&quot;label&quot;:&quot;Views: purchases, returns, pending financing, outstanding, collections.&quot;},{&quot;x&quot;:42,&quot;y&quot;:26,&quot;label&quot;:&quot;Purchased, pending financing and outstanding at a glance.&quot;},{&quot;x&quot;:37.5,&quot;y&quot;:40,&quot;label&quot;:&quot;Purchases vs returns by month.&quot;}]"><img src="../../../projects/invoice-portfolio-dashboards/client-financing.webp" alt="Client financing panel with KPIs for purchases, amounts pending financing and outstanding, and a monthly chart of purchases versus returns, invented data" loading="lazy" width="320" height="200"><span>Client financing panel</span></a></li></ul>
+      <details class="code"><summary>View code: Aging by bracket and amount-weighted aging</summary><p class="muted">From the Portfolio KPI dashboard. Aging per invoice = remittance date − document date; the portfolio KPI weights it by the outstanding amount.</p><pre><code>// Aging per invoice: AGING = IF(FREMESA - FDOC = 0, 1, FREMESA - FDOC)
+function calcAgingDias(r){
+  var frem = r._fremesa, fdoc = r.FDOC ? new Date(r.FDOC) : null;
+  if(!frem || !fdoc) return null;
+  var d = Math.round((frem - fdoc) / 86400000);
+  return d === 0 ? 1 : d;
+}
+
+function renderAging(rows, vivas){
+  var ab = {'No vencida':0,'0-30d':0,'31-60d':0,'61-90d':0,'&gt;90d':0};
+  vivas.filter(r =&gt; r._imppte &gt; 0 &amp;&amp; r._fv).forEach(function(r){
+    var d = (TODAY - r._fv) / 86400000;          // days past estimated due date
+    var k = d&lt;=0 ? 'No vencida' : d&lt;=30 ? '0-30d' : d&lt;=60 ? '31-60d' : d&lt;=90 ? '61-90d' : '&gt;90d';
+    ab[k] += r._imppte;
+  });
+  // Weighted aging = Σ(aging × outstanding) ÷ Σ(outstanding)
+  var w  = vivas.filter(r =&gt; r._imppte &gt; 0 &amp;&amp; r._agingdias != null);
+  var sI = w.reduce((s, r) =&gt; s + r._imppte, 0);
+  var sP = w.reduce((s, r) =&gt; s + r._agingdias * r._imppte, 0);
+  var ag = sI ? sP / sI : 0;
+  // … render KPI cards, bracket bars and doughnut
+}</code></pre></details>
+      <p class="muted">The production tools run on real company data and are not published. The screenshots show the same tools loaded with invented data.</p>
+      
+    </section>
+    <section><h2>Tools</h2><p class="tools">JavaScript · HTML · Chart.js · SheetJS · ExcelJS · jsPDF · Excel</p></section>
+  </div>
+  <nav class="project-foot" aria-label="Next project">
+    <a href="../../../en/experience/#zintra"><span>Experience</span>Zintra Capital</a>
+    <a class="next" href="../../../en/projects/operations-manual-controls/"><span>Next project</span>Portfolio Monitoring Review &amp; Operations Manual</a>
+  </nav>
+</article>
+</main>
+<footer class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div>
+      <h2>Contact</h2>
+      <p class="muted">Graduate role in Audit, Advisory or Finance · Barcelona, Spain · Open to relocation</p>
+    </div>
+    <ul class="contact-links">
+      <li><a class="btn btn-primary" href="../../../assets/documents/Tomas_Roura_Zabala_CV_EN.pdf" download="Tomas_Roura_Zabala_CV_EN.pdf"><svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m-4-4 4 4 4-4M4 16h12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Download CV</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/tomas-roura-zabala" target="_blank" rel="me noopener">LinkedIn <svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4H4v12h12v-4M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a class="btn" href="https://github.com/rouraaaz" target="_blank" rel="me noopener">GitHub <svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4H4v12h12v-4M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li class="email"><a href="mailto:rourazabalatomas@gmail.com">rourazabalatomas@gmail.com</a> <button type="button" class="copy-btn" data-copy="rourazabalatomas@gmail.com" data-done="Copied">Copy</button></li>
+    </ul>
+  </div>
+  <p class="wrap fineprint">Dashboard screenshots show my tools running on invented data. Confidential documents are described, not shown.</p>
+</footer>
+<dialog class="lightbox" aria-label="Screenshots">
+  <div class="lb-bar"><p class="lb-title"></p><span class="lb-count"></span><button type="button" class="lb-close">Close</button></div>
+  <div class="lb-stage"><button type="button" class="lb-nav lb-prev" aria-label="Previous">‹</button><figure class="lb-fig"><div class="lb-imgwrap"><img alt=""><div class="lb-marks"></div></div><figcaption class="lb-cap"></figcaption></figure><button type="button" class="lb-nav lb-next" aria-label="Next">›</button></div>
+</dialog>
+<script src="../../../assets/js/site.js" defer></script>
+<script src="../../../assets/js/demos.js" defer></script>
+</body>
+</html>
