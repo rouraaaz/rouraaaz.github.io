@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rouraaaz.github.io/sitemap.xml
