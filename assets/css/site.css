@@ -246,6 +246,7 @@ ul, ol { list-style: none; }
 .contact-in { display: grid; gap: 20px; padding-block: 48px 28px; }
 .contact h2 { font-size: 1.8rem; }
 .contact .muted { margin-top: 6px; }
+.contact .bio { margin-top: 14px; color: var(--ink-2); max-width: 60ch; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .email { display: flex; gap: 8px; align-items: center; font-weight: 500; margin-left: 8px; }
 .copy-btn { border: 1px solid var(--line); background: var(--bg); color: var(--ink-2); border-radius: 6px; padding: 3px 8px; font: 500 .78rem var(--f-body); cursor: pointer; }
